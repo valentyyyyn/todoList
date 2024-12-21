@@ -21,11 +21,21 @@
         <h2 class="text-4xl ml-3 mt-1">Organize your tasks</h2>
     </header>
     <!--tasks section-->
-    <main>
-        <input placeholder="New Task..." aria-required="true" minlength="5" type="text" id="task_input">
-        <button type="submit" id="add_task_button">Add Task</button>
+    <main class="flex flex-col justify-center items-center mt-7">
+
+        <input placeholder="New Task..." aria-required="true" minlength="5" type="text" id="task_input"
+        class="w-80 h-10 p-2 text-lg bg-[#4E5166] text-[#f8f5f2] rounded-s border-none focus:outline-none">
+
+        <button 
+        type="submit"
+         id="add_task_button"
+         class="mt-4 w-40 h-11 bg-[#5E60CE] font-bold text-xl text-[#f8f5f2] rounded-xl border-none">
+            ADD
+        </button>
+
         <div id="task_container">
         </div>
+        
     </main>
     <footer id="footer">
         <p>
