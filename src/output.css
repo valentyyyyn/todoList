@@ -554,8 +554,8 @@ video {
   display: none;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
+.font-poppins {
+  font-family: Poppins, sans-serif;
 }
 
 .text-6xl {
