@@ -3,20 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="to-do list for better organization of your day
+    <meta name="description" content="todo list for better organization of your daily tasks
     ">
-    <meta name="keywords" content="to-do, list, organization, personal development">
+    <meta name="keywords" content="todo, list, organization, personal development, productivity, personal tools">
     <meta name="author" content="Valentín Miguel Gómez">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Junge&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="../images/favicon.png">
     <link href="./output.css" rel="stylesheet">
-    <title>To-Do App</title>
+    <title>To-Do List</title>
 </head>
 <body class="flex flex-col items-center justify-center font-poppins bg-[#2B2D42] text-[#f8f5f2]">
     <!--welcome section-->
-    <header id="welcome_header" class="flex flex-col items-center justify-center mt-10">
+    <header id="header" class="flex flex-col items-center justify-center mt-10">
         <h1 class="text-7xl font-semibold">To-Do List</h1>
         <h2 class="text-4xl ml-3 mt-1">Organize your tasks</h2>
     </header>
@@ -28,12 +28,12 @@
 
         <button 
         type="submit"
-         id="add_task_button"
-         class="mt-4 w-40 h-11 bg-[#5E60CE] font-bold text-xl text-[#f8f5f2] rounded-xl border-none hover:scale-105 transition-transform duration-250 ease-in-out focus:outline-none">
+        id="add_task_button"
+        class="mt-4 w-40 h-11 bg-[#5E60CE] font-bold text-xl text-[#f8f5f2] rounded-xl border-none hover:scale-105 transition-transform duration-250 ease-in-out focus:outline-none">
             ADD
         </button>
 
-        <div id="task_container">
+        <div id="task_container" class="flex flex-col items-center mt-2">
         </div>       
     </main>
 
@@ -45,6 +45,6 @@
             </a>
         </p>
     </footer>
-
+    <script src="./main.js"></script>
 </body>
 </html>
