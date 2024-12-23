@@ -698,6 +698,14 @@ video {
   color: rgb(248 245 242 / var(--tw-text-opacity, 1));
 }
 
+.text-\[\#fffff\] {
+  color: #fffff;
+}
+
+.text-\[\#ffff\] {
+  color: #ffff;
+}
+
 .underline {
   text-decoration-line: underline;
 }
