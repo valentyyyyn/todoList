@@ -15,7 +15,7 @@
     <title>To-Do List</title>
 </head>
 <body class="flex flex-col items-center justify-center font-poppins bg-[#2B2D42] text-[#f8f5f2]">
-    <!--welcome section-->
+    <!--hero section-->
     <header id="header" class="flex flex-col items-center justify-center mt-10">
         <h1 class="text-7xl font-semibold">To-Do List</h1>
         <h2 class="text-4xl ml-3 mt-1">Organize your tasks</h2>
@@ -33,8 +33,12 @@
             ADD
         </button>
 
+        <!--task container-->
         <div id="task_container" class="flex flex-col items-center mt-2">
-            <ul>
+            <p class="text-lg mt-4 text-[#008000]" id="no_pending_tasks_message">
+                ¡No pending tasks!
+            </p>
+            <ul id="task_list" class="flex flex-col items-center mt-2">
                 <!--tasks will be added here-->
             </ul>
         </div>       
