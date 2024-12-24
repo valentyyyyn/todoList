@@ -6,6 +6,7 @@ const noPendingTask = document.getElementById('no_pending_tasks_message');
 
 
 // main event listener
+
 addTaskButton.addEventListener('click', (e) => {
     e.preventDefault(); 
 
@@ -26,8 +27,6 @@ addTaskButton.addEventListener('click', (e) => {
     }
     // tasks 
     addTask();
-
-    addDeleteButton();
 });
 
 // functions
@@ -37,11 +36,12 @@ function addTask() {
     const taskText = document.createElement('p');
     const task = taskInput.value;
 
-    individualTask.className = 'text-2xl mt-2 flex flex-grow items-center justify-center';
+    individualTask.className = 'text-2xl ml-4 mt-2 flex flex-grow items-center justify-center max-w-md';
     taskText.textContent = task;
 
     individualTask.appendChild(taskText);
     addDeleteButton(individualTask);
+    addCompleteButton(individualTask);
 
     taskList.appendChild(individualTask);
     taskInput.value = '';
@@ -64,6 +64,26 @@ function addDeleteButton(individualTask) {
         individualTask.remove();
         if (taskList.children.length === 0) {
             taskList.appendChild(noPendingTask);
+        }
+    });
+}
+
+function addCompleteButton(individualTask) {
+    const button = document.createElement('button');
+    button.className = 'ml-4'; 
+
+    const img = document.createElement('img');
+    img.src = '../images/complete_icon.png'; 
+    img.alt = 'Complete task'; 
+    img.className = 'w-6 h-6 mt-2 hover:scale-105 transition-transform duration-300 ease-in-out'; 
+
+    button.appendChild(img);
+    individualTask.appendChild(button);
+
+    button.addEventListener('click', () => {
+        individualTask.classList.add('line-through', 'text-green-500');
+        if (individualTask.classList.contains('line-through')) {
+            button.remove();
         }
     });
 }
