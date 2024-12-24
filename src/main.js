@@ -111,11 +111,10 @@ function saveTasksToLocalStorage() {
 }
 
 function loadTasksFromLocalStorage() {
-    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || []; // Recuperar datos
+    const savedTasks = JSON.parse(localStorage.getItem('tasks')) || []; 
 
-    // Si hay tareas guardadas, eliminar el mensaje de "No pending tasks"
     if (savedTasks.length > 0) {
-        noPendingTask.remove(); // Eliminar el mensaje si hay tareas
+        noPendingTask.remove(); 
     }
 
     // Crear tareas guardadas
@@ -138,7 +137,6 @@ function loadTasksFromLocalStorage() {
         taskList.appendChild(individualTask);
     });
 
-    // Si no hay tareas, mostrar el mensaje "No pending tasks"
     if (savedTasks.length === 0) {
         taskList.appendChild(noPendingTask);
     }
