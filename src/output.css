@@ -695,6 +695,10 @@ video {
   background-color: rgb(89 91 99 / var(--tw-bg-opacity, 1));
 }
 
+.bg-\[\#\#595b63\] {
+  background-color: ##595b63;
+}
+
 .p-2 {
   padding: 0.5rem;
 }
@@ -754,6 +758,11 @@ video {
 .text-red-500 {
   --tw-text-opacity: 1;
   color: rgb(239 68 68 / var(--tw-text-opacity, 1));
+}
+
+.text-orange-500 {
+  --tw-text-opacity: 1;
+  color: rgb(249 115 22 / var(--tw-text-opacity, 1));
 }
 
 .underline {

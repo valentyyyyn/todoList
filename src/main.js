@@ -38,7 +38,7 @@ function addTask() {
     const taskText = document.createElement('p');
     const task = taskInput.value;
 
-    individualTask.className = 'text-xl mt-2 flex flex-grow items-center line-clamp-2 bg-[#4E5166] p-2 rounded-lg shadow-md';
+    individualTask.className = 'text-xl mt-2 flex flex-grow items-center line-clamp-2 bg-[#595b63] p-2 rounded-lg shadow-md';
     taskText.textContent = task;
     taskText.className = 'flex-grow';
 
