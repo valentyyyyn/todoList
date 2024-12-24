@@ -117,7 +117,7 @@ function loadTasksFromLocalStorage() {
         noPendingTask.remove(); 
     }
 
-    // Crear tareas guardadas
+    // create saved tasks
     savedTasks.forEach(task => {
         const individualTask = document.createElement('li');
         const taskText = document.createElement('p');
