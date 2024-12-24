@@ -36,7 +36,7 @@ function addTask() {
     const taskText = document.createElement('p');
     const task = taskInput.value;
 
-    individualTask.className = 'text-xl mt-4 flex flex-grow items-center line-clamp-2 bg-[#4E5166] p-2 rounded-lg shadow-md';
+    individualTask.className = 'text-xl mt-2 flex flex-grow items-center line-clamp-2 bg-[#4E5166] p-2 rounded-lg shadow-md';
     taskText.textContent = task;
     taskText.className = 'flex-grow';
 
@@ -51,7 +51,7 @@ function addTask() {
 
 function addDeleteButton(individualTask) {
     const button = document.createElement('button');
-    button.className = 'ml-4 flex-shrink-0'; 
+    button.className = 'ml-2 flex-shrink-0'; 
 
     const img = document.createElement('img');
     img.src = '../images/delete_icon.png'; 
