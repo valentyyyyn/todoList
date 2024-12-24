@@ -57,7 +57,7 @@ function addDeleteButton(individualTask) {
     button.className = 'ml-2 flex-shrink-0';
 
     const img = document.createElement('img');
-    img.src = './delete_icon.png';
+    img.src = '../delete_icon.png';
     img.alt = 'Delete task';
     img.className = 'w-6 h-6 mt-1 hover:scale-105 transition-transform duration-300 ease-in-out relative';
 
@@ -78,7 +78,7 @@ function addCompleteButton(individualTask) {
     button.className = 'ml-2 flex-shrink-0';
 
     const img = document.createElement('img');
-    img.src = './complete_icon.png';
+    img.src = '../complete_icon.png';
     img.alt = 'Complete task';
     img.className = 'w-6 h-6 flex-shrink-0 mt-1 hover:scale-105 transition-transform duration-300 ease-in-out relative';
 
